@@ -6,8 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Outlined" rel="stylesheet">
     <title>index</title>
-    <script type="module" crossorigin src="/Class5.6-follow-teacher-homework/assets/main-cFzrvyJX.js"></script>
-    <link rel="stylesheet" crossorigin href="/Class5.6-follow-teacher-homework/assets/main-CzZjQYPV.css">
+    <script type="module" crossorigin src="/Class5.6-follow-teacher-homework/assets/main-B-HeiKqo.js"></script>
+    <link rel="stylesheet" crossorigin href="/Class5.6-follow-teacher-homework/assets/main-BmmKpetN.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light bg-light border-bottom">
@@ -105,7 +105,32 @@ pending_actions
         <!-- 密碼 -->
         <div class="mb-4">
          <p class="mb-2">密碼</p>
-         <button type="button" class="btn btn-outline-dark border rounded-4 btn-pd">修改密碼<span class="material-icons-outlined align-bottom">chevron_right</span></button>
+         <button type="button" class="btn btn-outline-dark border rounded-4 btn-pd" data-bs-toggle="modal" data-bs-target="#exampleModal" >修改密碼<span class="material-icons-outlined align-bottom">chevron_right</span></button>
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered password-modal">
+    <div class="modal-content">
+      <div class="modal-header password-modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">更新密碼</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body p-4">
+        <form>
+          <div class="form-floating mb-4">
+          <input type="password" class="form-control" id="password" placeholder="password">
+          <label for="password">新密碼</label>
+        </div>
+          <div class="form-floating">
+          <input type="password" class="form-control" id="password-repeat" placeholder="password-repeat">
+          <label for="password-repeat">再次密碼</label>
+        </div>
+        </form>
+      </div>
+      <div class="modal-footer py-3 pe-4">
+        <button type="button" class="btn btn-dark btn-pd rounded-4">更新密碼<span class="material-icons-outlined align-bottom">chevron_right</span></button>
+      </div>
+    </div>
+  </div>
+</div>
         </div>
         <!-- 信箱 -->
         <div class="form-floating mb-4">
@@ -128,7 +153,7 @@ pending_actions
     </div>
     <!-- 按鈕-->
      <div class="d-flex justify-content-center">
-        <button type="button" class="btn btn-pd rounded-4 border me-4">匯出 PDF<span class="material-icons-outlined align-bottom">chevron_right</span></button>
+        <button type="reset" class="btn btn-pd rounded-4 border me-4">重新填寫<span class="material-icons-outlined align-bottom">chevron_right</span></button>
         <button type="submit" class="btn btn-dark btn-pd rounded-4">儲存更新<span class="material-icons-outlined align-bottom">chevron_right</span></button>
      </div>
   </form>
