@@ -1,0 +1,44 @@
+// $utilities: map-merge(
+//   $utilities,
+//   (
+//     "font-size": map-merge(
+//       map-get($utilities, "font-size"),
+//       ( responsive: true ),
+//     ),
+//   )
+// );
+
+
+$utilities: (
+  "font-size": (
+      rfs: true,
+      property: font-size,
+      class: fs,
+      values: $font-sizes,
+      responsive: true
+    ),
+ "rounded": (
+      property: border-radius,
+      class: rounded,
+      values: (
+        null: $border-radius,
+        0: 0,
+        1: $border-radius-sm,
+        2: $border-radius,
+        3: $border-radius-lg,
+        circle: 50%,
+        pill: $border-radius-pill
+      ),
+      responsive: true
+    ),
+    "border": (
+      property: border,
+      values: (
+        null: $border-width solid $border-color,
+        0: 0,
+        1: 1px solid $border-color,
+      ),
+      responsive: true
+    ),
+    
+);
