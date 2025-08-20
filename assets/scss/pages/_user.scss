@@ -1,7 +1,4 @@
 
-.side-width{
-    width: 300px;
-}
 
 
 // scss 縮寫用法
@@ -19,6 +16,14 @@
     }
 }
 
+.side-width{
+    width: auto;
+    @include pad{
+        width: 300px;
+    }
+}
+
+
 
 .email-text{
     font-size: 14px;
@@ -33,9 +38,9 @@
     padding: 18px 24px;
 }
 
-// .tab-btn-bg{
-//     .nav-link{
-//     background-color: $white;
-//     }
-// }
+.tab-btn-bg{
+    .nav-link{
+    background-color: $white;
+    }
+}
 

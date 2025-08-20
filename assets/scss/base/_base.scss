@@ -1,6 +1,12 @@
 /* 標籤的基本樣式 */
 body {
   letter-spacing: 0.02em;
+  overflow-x: hidden;
+}
+
+[data-aos="fade-right"],
+[data-aos="fade-left"] {
+  overflow-x: hidden;
 }
 
 img {
@@ -20,3 +26,4 @@ a {
 .mb80{
   padding-bottom: 80px;
 }
+
